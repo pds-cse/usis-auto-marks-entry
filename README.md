@@ -1,4 +1,4 @@
-# usis-auto-marks-entry
+# Auto Marks Entry in USIS
 
 ## Overview
 This script automates the process of entering marks into the USIS system. Unlike previous approaches, the order of student IDs does not matter. The script compares student IDs against those in USIS to ensure accurate mark assignment, preventing errors where a student might receive another's marks.
