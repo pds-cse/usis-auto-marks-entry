@@ -22,36 +22,7 @@ Copy the cell of this formula and paste it into the script as shown in the next 
 
 ### Step 2: Execute the Script
 Copy and paste the script into the browser console while on the USIS marks entry page.
-
-```js
-// Paste below the cell output copied from the grade sheet (see the video)
-
-var x = document.getElementsByTagName('td');
-var student_ids_usis = [];
-var m = 28;
-
-// Uncomment this block to clear all marks
-// var k = 31;
-// for (let i = 0; i < Math.floor(x.length/13)-1; i++) {
-//     x[k].textContent = '';
-//     k += 13;
-// }
-
-//// Comment the following block and uncomment the above one to clear marks for all
-
-var k = 31;
-for (let i = 0; i < Math.floor(x.length/13)-1; i++) {
-    student_ids_usis.push(x[m].textContent);
-    for (let j = 0; j < student_ids_with_grades.length; j += 2) {
-        if(student_ids_usis[i] == student_ids_with_grades[j]) {
-            x[k].textContent = student_ids_with_grades[j+1];
-            break;
-        }
-    }
-    k += 13;
-    m += 13;
-}
-```
+Script: [main.js](main.js) 
 
 ## Notes
 - Ensure that you are on the correct USIS marks entry page before running the script.
