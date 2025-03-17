@@ -12,13 +12,13 @@ This script automates the process of entering marks into the USIS system. Unlike
 ## Usage
 
 ### Step 1: Generate Student IDs with Grades
-Use the following formula in your spreadsheet to generate a list of student IDs and their corresponding grades:
+Use the following formula in your gradesheet to generate a list of student IDs and their corresponding grades. Modify the `J``:J` column name to indicate the `Total (100.00)` column.
 
 ```excel
 ="var student_ids_with_grades = [" & TEXTJOIN(", ", TRUE, FILTER(FLATTEN({B11:B, J11:J}), LEN(FLATTEN({B11:B, J11:J})) > 0)) & "];"
 ```
 
-Copy the output of this formula and paste it into the script as shown in the next step.
+Copy the cell of this formula and paste it into the script as shown in the next step.
 
 ### Step 2: Execute the Script
 Copy and paste the script into the browser console while on the USIS marks entry page.
@@ -64,4 +64,5 @@ This project is open-source and available for use and modification as needed.
 ## Disclaimer
 Use at your own risk. The author is not responsible for any issues arising from misuse of the script.
 
+Refer to this [video](https://youtu.be/pFDlC6ly6kU) if you need help.
 ---
