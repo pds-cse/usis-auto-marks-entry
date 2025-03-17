@@ -21,8 +21,7 @@ Use the following formula in your gradesheet to generate a list of student IDs a
 Copy the cell of this formula and paste it into the script as shown in the next step.
 
 ### Step 2: Execute the Script
-Copy and paste the script into the browser console while on the USIS marks entry page.
-Script: [main.js](main.js) 
+Copy and paste the script ([main.js](main.js)) into the browser console while on the USIS marks entry page.
 
 ## Notes
 - Ensure that you are on the correct USIS marks entry page before running the script.
