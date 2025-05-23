@@ -1,4 +1,5 @@
-// paste after this line the cell copied from the gradesheet
+// paste and overwrite the following line cell copied from the gradesheet
+var grades = [21101183, 40.56, 21101317, 49.67, 22301165, 64.8, 22301511];
 
 
 var x = document.getElementsByTagName('td');
